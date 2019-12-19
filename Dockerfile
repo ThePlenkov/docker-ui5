@@ -7,3 +7,4 @@ RUN apk add zip
 RUN yarn global add grunt
 RUN yarn global add gulp
 
+RUN yarn global add @ui5/cli
