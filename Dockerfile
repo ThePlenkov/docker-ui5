@@ -1,7 +1,7 @@
 FROM node:alpine
 
-# Install zip
-RUN apk add zip
+# Install zip and git ( to support npm dependencies with git )
+RUN apk add zip git
 
 #Install grunt globally
 RUN yarn global add grunt
