@@ -4,7 +4,8 @@ FROM node:alpine
 RUN npm install -g npm@latest
 
 # Install zip and git ( to support npm dependencies with git )
-RUN apk add zip git curl
+# python is needed for node-gyp
+RUN apk add zip git curl python
 
 #Install grunt globally
 RUN yarn global add grunt
